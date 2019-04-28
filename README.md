@@ -25,16 +25,16 @@ The API is deployed in root path /api
 There are two main “routes”: /api/todo and /api/auth.
 
 ### The “todo” API has methods for:
--Get all todos 
--Add a todo 
--Get a todo by Id
--Get a todo by Category
--Update a todo (requires auth token)
--Delete a todo (requires auth token)
+- Get all todos 
+- Add a todo 
+- Get a todo by Id
+- Get a todo by Category
+- Update a todo (requires auth token)
+- Delete a todo (requires auth token)
 
 ### The "auth" API has a method for:
--Sign in a user
--Register a user
+- Sign in a user
+- Register a user
 
 I have implemented a JWT token strategy to secure the update and delete of "todos”.
 
@@ -45,12 +45,12 @@ I am not very experienced in the frontend, but I know the basics of Angular, Rea
 I think Vue it’s easier, but any frontend framework could be good for this API.
 
 The app has some basic functionality:
--Login user
--Register user
--List all todos
--Add a todo 
--Delete a todo (need to login first)
--Mark a todo completed (only in UI. TODO: persist in DB)
+- Login user
+- Register user
+- List all todos
+- Add a todo 
+- Delete a todo (need to login first)
+- Mark a todo completed (only in UI. TODO: persist in DB)
 
 ## Installation
 
@@ -69,7 +69,7 @@ The password is hashed when stored in database.
 Then the user signs in using email and password making a POST request to /api/auth/login.
 If it’s ok a JWT token is returned.
 This JWT token is needed to make a PUT or DELETE request to /api/todo.
-To get all todos by id or category and all users there is no need to pass a JWT token, you can simply make a GET request to /api/todo/:id or /api/todo/:category or /api/users.
+To get all todos by id or category there is no need to pass a JWT token, you can simply make a GET request to /api/todo/:id or /api/todo/:category.
 
 ## Testing
 
