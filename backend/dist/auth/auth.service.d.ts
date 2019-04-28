@@ -1,5 +1,5 @@
-import { Payload } from 'src/interfaces/payload.interface';
-import { UserService } from 'src/shared/user.service';
+import { Payload } from '../interfaces/payload.interface';
+import { UserService } from '../shared/user.service';
 export declare class AuthService {
     private userService;
     constructor(userService: UserService);

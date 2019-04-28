@@ -1,6 +1,6 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
-import { Payload } from 'src/interfaces/payload.interface';
-import { UserService } from 'src/shared/user.service';
+import { Payload } from '../interfaces/payload.interface';
+import { UserService } from '../shared/user.service';
 import { sign } from 'jsonwebtoken';
 
 @Injectable()
